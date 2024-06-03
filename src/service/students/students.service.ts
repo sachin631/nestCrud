@@ -8,7 +8,7 @@ import { isStudent } from "src/interface/student.interface";
 @Injectable()
 export class studentService{
 
-    constructor(@InjectModel('Student') private studentModel:Model<isStudent>) { }
+    constructor(@InjectModel('Students') private studentModel:Model<isStudent>) { }
 
     //create student api
     async createStudents(createStudentDto:createStudentDto):Promise<isStudent>{
