@@ -9,10 +9,11 @@ import { studentModule } from './modules/student.module';
 
 @Module({
   imports: [
+    studentModule,
     MongooseModule.forRoot("mongodb://localhost:27017",{
       dbName:"nestjsStudents"
     }),
-    studentModule
+    
   ],
   controllers: [],
   providers: [],

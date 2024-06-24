@@ -14,6 +14,8 @@ export class students{
     marks:number
     @Prop({default:"user"})
     role:string
+    @Prop()
+    image:string
 
 }
 
